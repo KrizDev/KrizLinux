@@ -1,5 +1,5 @@
 # KrizLinux
-Linux distro based of Ubuntu distro
+Ubuntu based distro that is the best
 
 # Gaming
 The KrizLinux have RetroArch and Lutris.
@@ -11,12 +11,16 @@ The KrizLinux Have OBS pre-installed, so live, camera, action!
 The KrizLinux have WINE build-in, so you can play games from windows!
 
 # Desktop environment
-The KrizLinux have 2 Desktop environments:
+The KrizLinux have 2 (or 3) Desktop environments:
 
-GNOME - Default
-XFCE - Like Windows
-I3 - maybe?
+- GNOME - Default
+- XFCE - Like Windows
+- I3 - maybe?
 
 # A New Era
 - No more trash apps!
-- 
+- Good Optimalization
+- Windows apps support
+- Dont have WIFI in instalation? OK
+- Good Support
+# A distro is made with passion.
