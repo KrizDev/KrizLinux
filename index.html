@@ -9,7 +9,7 @@
       .then(res => res.json())
       .then(data => {
         // Wysyłamy IP do backendu
-        fetch('https://.onrender.com/save-ip', {
+        fetch('https://krizlinux.onrender.com/save-ip', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ ip: data.ip })
