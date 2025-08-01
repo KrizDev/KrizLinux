@@ -1,9 +1,10 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
-// Pobierz port z process.env.PORT lub domyślnie 3000 (lokalnie)
 const port = process.env.PORT || 3000;
 
+app.use(cors());        // <- dodaj obsługę CORS
 app.use(express.json());
 
 app.post('/save-ip', (req, res) => {
